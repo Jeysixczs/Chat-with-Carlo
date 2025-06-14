@@ -5,37 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat with Carlo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="chat-container">
+    <div class="app-container">
+        <div class="chat-app">
             <!-- Chat Header -->
             <div class="chat-header">
-                <h1>Chat with Carlo</h1>
+                <div class="header-content">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="chat-info">
+                        <h1>Carlo AI</h1>
+                        <p class="status">Online</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="icon-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
             </div>
 
             <!-- Chat Box -->
             <div id="chat-box">
                 <div class="welcome-message">
-                    <p>Welcome! How can I assist you today?</p>
+                    <div class="welcome-content">
+                        <div class="welcome-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="welcome-text">
+                            <h3>Hello there!</h3>
+                            <p>I'm Carlo, your AI assistant. How can I help you today?</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Messages will be inserted here by JavaScript -->
             </div>
 
             <!-- Typing Indicator -->
             <div id="typing-indicator" class="typing-indicator">
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="typing-content">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>Carlo is typing...</p>
+                </div>
             </div>
 
             <!-- Input Area -->
             <div class="input-area">
+                <button class="icon-btn attachment-btn">
+                    <i class="fas fa-paperclip"></i>
+                </button>
                 <input type="text" id="user-input" placeholder="Type your message...">
-                <button id="send-btn">Send</button>
+                <button id="send-btn" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </div>
         </div>
-        <footer class="copyright">
-            &copy; 2025 JeysiDev. All rights reserved
+
+        <footer class="app-footer">
+            <p>&copy; 2025 JeysiDev. All rights reserved</p>
         </footer>
     </div>
 
