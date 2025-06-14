@@ -9,6 +9,14 @@ body {
     align-items: center;
     height: 100vh;
 }
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Chat Container */
 .chat-container {
