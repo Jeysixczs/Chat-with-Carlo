@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <!-- Chat Header -->
-        <div class="chat-header">
-            <h1>Chat with Carlo</h1>
-        </div>
+    <div class="container">
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <h1>Chat with Carlo</h1>
+            </div>
 
-        <!-- Chat Box -->
-        <div id="chat-box">
-            <div class="welcome-message">
-                <p>Welcome! How can I assist you today?</p>
+            <!-- Chat Box -->
+            <div id="chat-box">
+                <div class="welcome-message">
+                    <p>Welcome! How can I assist you today?</p>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
             </div>
         </div>
-
-        <!-- Typing Indicator -->
-        <div id="typing-indicator" class="typing-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <!-- Input Area -->
-        <div class="input-area">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-btn">Send</button>
-        </div>
-    </div>
-    <footer class="copyright">
+        <footer class="copyright">
             &copy; 2025 JeysiDev. All rights reserved
         </footer>
+    </div>
 
     <script type="module" src="script.js"></script>
 </body>
