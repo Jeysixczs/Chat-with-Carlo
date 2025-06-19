@@ -6,6 +6,9 @@
     <title>Chat with Carlo</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
@@ -17,12 +20,14 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="chat-info">
-                        <h1>Carlo AI</h1>
-                        <p class="status">Online</p>
+                        <h1>Chat with <span class="gradient-text">Carlo</span></h1>
+                        <p class="status">Online • Powered by Gemini AI</p>
                     </div>
                     <div class="header-actions">
-                        <button class="icon-btn"><i class="fas fa-ellipsis-vertical"></i></button>
-                    </div>
+                        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        </div>
                 </div>
             </div>
 
@@ -30,12 +35,26 @@
             <div id="chat-box">
                 <div class="welcome-message">
                     <div class="welcome-content">
-                        <div class="welcome-avatar">
+                        <div class="welcome-avatar pulse-glow">
                             <i class="fas fa-robot"></i>
                         </div>
                         <div class="welcome-text">
-                            <h3>Hello there!</h3>
-                            <p>I'm Carlo, your AI assistant. How can I help you today?</p>
+                            <h3 class="gradient-text">Hello there!</h3>
+                            <p>I'm <span class="highlight-text">Carlo</span>, your AI assistant powered by <span class="highlight-text">Google Gemini</span>. How can I help you today?</p>
+                            <div class="welcome-tips">
+                                <div class="tip-card">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <p>Ask me anything</p>
+                                </div>
+                                <div class="tip-card">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                    <p>Get creative ideas</p>
+                                </div>
+                                <div class="tip-card">
+                                    <i class="fas fa-code"></i>
+                                    <p>Solve coding problems</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,24 +69,26 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <p>Carlo is typing...</p>
+                    <p>Carlo is thinking...</p>
                 </div>
             </div>
 
             <!-- Input Area -->
             <div class="input-area">
-                <button class="icon-btn attachment-btn">
-                    <i class="fas fa-paperclip"></i>
+                <button class="emoji-btn" aria-label="Open emoji picker">
+                    <i class="far fa-smile"></i>
                 </button>
-                <input type="text" id="user-input" placeholder="Type your message...">
-                <button id="send-btn" class="send-btn">
+                <div class="input-container">
+                    <textarea id="user-input" placeholder="Message Carlo..." rows="1"></textarea>
+                </div>
+                <button id="send-btn" class="send-btn glow-on-hover" aria-label="Send message">
                     <i class="fas fa-paper-plane"></i>
                 </button>
             </div>
         </div>
 
         <footer class="app-footer">
-            <p>&copy; 2025 JeysiDev. All rights reserved</p>
+            <p>© 2025 <span class="gradient-text">JeysiDev</span> • All rights reserved</p>
         </footer>
     </div>
 
