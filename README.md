@@ -66,11 +66,7 @@ const genAI = new GoogleGenerativeAI("YOUR_API_KEY_HERE");
 
 ## 🧑‍💻 Author
 
-Built with ❤️ by **Carlo (JeysiDev)**  
+Created by **Carlo (JeysiDev)**  
 📅 © 2025 — All rights reserved
 
 ---
-
-## 📃 License
-
-This project is open-source under the [MIT License](LICENSE).
